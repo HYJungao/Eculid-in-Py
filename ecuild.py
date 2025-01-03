@@ -141,7 +141,7 @@ class CountSketch:
             idx = h(key)
 
             if self.states[i, idx] != win_id:
-                self.counters[i, idx] += 1
+                self.counters[i, idx] = 1
                 self.states[i, idx] = win_id
             else:
                 self.counters[i, idx] += 1
